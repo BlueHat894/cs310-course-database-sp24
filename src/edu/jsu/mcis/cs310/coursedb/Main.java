@@ -25,7 +25,15 @@ public class Main {
             
             System.out.println("Connected Successfully!");
             
+            int termid = 1; 
+            String subjectid = "CS"; 
+            String courseNum = "201"; 
+
+            // Call the find method and print its results
+            String sectionResults = sectionDao.find(termid, subjectid, courseNum);
+            System.out.println(sectionResults);
         }
+        
         
     }
     
